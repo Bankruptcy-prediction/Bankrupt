@@ -18,6 +18,8 @@ In summary, the results presented by before model were reproduced. In addition, 
 
 ![image](https://user-images.githubusercontent.com/71624353/180659363-97f63c73-7866-4c0c-982b-cdaa98fe3658.png)
 
+
+
 # LOADING DATASET AND PACKAGES:
 
 Initially we select the dataset from the Kaggle of bankruptcy data from the Taiwan Economic Journal for the years 1999–2009 [https://www.kaggle.com/datasets/fedesoriano/company- bankruptcy-prediction]. We understood the dataset's features and how it can interrupt the output of the data. we started developing the project. We install all the packages that are needed for the development of the model.
@@ -174,3 +176,42 @@ Advantages of using Linear Kernel:
 
 Regularisation parameter is required. On the other hand, when training with other kernels, there is a need to optimise the γ parameter which means that performing a grid search will usually take more time.
 
+
+
+SAMPLE OUTPUT AND FUTURE SCOPE
+1.	We develop the model for the user to predict the bankruptcy analyze.
+2.	Initially to use the application, We create a login page where if the user has an existing account, he can directly access the application.
+
+![image](https://user-images.githubusercontent.com/71624353/180660532-83e92f80-7dce-410d-9a3b-689edc9a40d2.png)
+
+
+3.	If the user is new but wants to use the application, he needs to click on Register Here now, fill in the basic details asked, and click on Register to get registered.
+
+
+ ![image](https://user-images.githubusercontent.com/71624353/180660572-88217c34-5dc2-48c7-bb7b-a3e2dee5e567.png)
+
+
+4.	Now all the user information has been saved in the server-side database and the user gets access to the web application by entering his E-mail id and password, which he provided during the registration.
+5.	After the user logins, the page will atomically redirect to the application home page, where there is a short introduction on bankruptcy next, the user gets an option to upload the data in the CSV file format which he wants to predict and can click on upload.
+![image](https://user-images.githubusercontent.com/71624353/180660630-44939045-2442-405d-92bd-ba0af76bc15e.png)
+
+
+6.	Just wait for two minutes to train and test the data set after uploading.
+7.	Finally, the user gets the prediction over the different models and pre-processes for the dataset he has provided.
+ 
+ ![image](https://user-images.githubusercontent.com/71624353/180660654-8f49183c-2344-45dc-8864-3e8085fde5ab.png)
+![image](https://user-images.githubusercontent.com/71624353/180660742-db7cd28b-178b-4800-9361-e9fa6cdbd77e.png)
+
+Representations:
+Count plot-
+![image](https://user-images.githubusercontent.com/71624353/180660772-c8090e53-1b21-44af-8c4a-1d55cc67a8be.png)
+
+HeatMap-
+
+![image](https://user-images.githubusercontent.com/71624353/180660781-b294d463-cf35-4142-998e-dccb591cb5a2.png)\
+
+![image](https://user-images.githubusercontent.com/71624353/180660792-62e77629-fe8b-4b3b-93a8-4e23b3348e7f.png)
+
+Future Scope:
+Since Bankruptcy prediction is an important problem in finance, since successful predictions would allow stakeholders to take early actions to limit their economic losses. In recent years many studies have explored the application of machine learning models to bankruptcy prediction with financial ratios as predictors.
+In future work, we can consider developing the bankrupt prediction system for an individual user. We can do this by acquiring the user's financial details with the help of government-issued financial proof such as a pan card. Once the user enters his government-issued financial proof details, the system gets all the user's financial information, such as bank savings, property details, loans, etc. Using this information our system uses machine learning algorithms to analyze the data and efficiently classify whether the user will go bankrupt in the near future.If so the system can automatically send an e-mail alert to the user along with some of the prevention measures that are required to avoid bankrupt
