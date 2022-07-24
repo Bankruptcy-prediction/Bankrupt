@@ -51,9 +51,126 @@ With the help of XAMPP we were able to serve our web pages with were embedded by
 ![image](https://user-images.githubusercontent.com/71624353/180659452-9c61a274-f9ad-46f2-8a9a-2369acef6a01.png)
 
 
- 
-
-
 4)	After starting the modules, we must go to MyPHPAdmin home page with the help of the URL: http://localhost/phpmyadmin/ . Then there by clicking on database we can create a new database in the table form where we can link it to the html source code where we are taking the user information to access our webpage. So with the help of user information, we can validate and verify the user who is trying to access our webpage.
 5)	Now we are ready to host our web page to which our python application has been embedded.
+
+
+# ALGORITHMS
+
+
+
+
+# RANDOM FOREST
+
+How Random Forest Works-
+
+Random forest is a supervised learning algorithm. The “forest” it builds is an ensemble of decision trees, usually trained with the “bagging” method. The general idea of the bagging method is that a combination of learning models increases the overall result.
+The big advantage of random forest is that it can be used for classification and regression problems, which form the majority of current machine learning systems.
+
+Let’s look at the random forest in classification since classification is sometimes considered the building block of machine learning. Below you can see what a random forest would look like with two	trees:
+
+
+Random Forest Feature Importance-
+
+Another excellent advantage of the random forest approach is that determining the relative value of each feature on the forecast is relatively simple. Sklearn has a fantastic tool for measuring the relevance of a feature by looking at how much the tree nodes that use it reduce impurity over the entire forest. After training, it calculates this score for each characteristic and adjusts the findings so that the total importance is equal to one.
+
+The Working process can be explained in the below steps-
+
+1)	Select random K data points from the training set.
+
+2)	Build the decision trees associated with the selected data points (Subsets).
+
+3)	Choose the number N for decision trees that you want to build.
+
+4)	Repeat Step 1 & 2.
+
+5)	For new data points, find the predictions of each decision tree, and assign the new data points to the category that wins the majority votes.
+
+# DECISION TREE ALGORITHM
+
+
+Decision Tree algorithm belongs to the family of supervised learning algorithms. Unlike other supervised learning algorithms, the decision tree algorithm can be used for solving regression and classification problems too.
+
+The goal of using a Decision Tree is to create a training model that can use to predict the class or value of the target variable by learning simple decision rules inferred from prior data(training data).
+
+
+
+ 
+In Decision Trees, for predicting a class label for a record we start from the root of the tree. We compare the values of the root attribute with the record’s attribute. On the basis of comparison, we follow the branch corresponding to that value and jump to the next node.
+
+Types of Decision Trees
+
+Types of decision trees are based on the type of target variable we have. It can be of two types:
+
+1.	Categorical Variable Decision Tree: Decision Tree which has a categorical target variable then it called a Categorical variable decision tree.
+2.	Continuous Variable Decision Tree: Decision Tree has a continuous target variable then it is called Continuous Variable Decision Tree.
+
+Important Terminology related to Decision Trees-
+
+Root Node, Splitting, Decision Node, Leaf / Terminal Node, Pruning, Branch / Sub-Tree, Parent and Child Node.
+
+How do Decision Trees work-
+
+The decision of making strategic splits heavily affects a tree’s accuracy. The decision criteria are different for classification and regression trees.
+Decision trees use multiple algorithms to decide to split a node into two or more sub-nodes. The creation of sub-nodes increases the homogeneity of resultant sub-nodes. In other words, we can say that the purity of the node increases with respect to the target variable. The decision tree splits the nodes on all available variables and then selects the split which results in most homogeneous sub-nodes.
+Steps-
+
+1)Begin the tree with the root node, says S, which contains the complete dataset.
+
+
+ 
+3)Divide the S into subsets that contains possible values for the best attributes. 4)Generate the decision tree node, which contains the best attribute.
+5)Recursively make new decision trees using the subsets of the dataset created in step -3. Continue this process until a stage is reached where you cannot further classify the nodes and called the final node as a leaf node.
+
+# K-NEAREST NEIGHBORS
+
+K-nearest neighbours (KNN) is a type of supervised learning algorithm used for both regression and classification. KNN tries to predict the correct class for the test data by calculating the distance between the test data and all the training points. Then select the K number of points which is closet to the test data. The KNN algorithm calculates the probability of the test data belonging to the classes of ‘K’ training data and class holds the highest probability will be selected. In the case of regression, the value is the mean of the ‘K’ selected training points.
+
+How does K-NN work-
+
+The K-NN working can be explained on the basis of the below algorithm:
+
+1)	Select the number K of the neighbours
+
+2)	Calculate the Euclidean distance of K number of neighbours
+
+3)	Take the K nearest neighbours as per the calculated Euclidean distance.
+
+4)	Among these k neighbours, count the number of the data points in each category.
+
+5)	Assign the new data points to that category for which the number of the neighbour is maximum.
+
+6)	Our model is ready.
+ 
+![image](https://user-images.githubusercontent.com/71624353/180660100-be0edc74-16cd-4cf5-bf31-2d2d4a95b71e.pn
+
+# LOGISTIC REGRESSION
+
+
+Logistic regression is a supervised learning classification algorithm used to predict the probability of a target variable. The nature of target or dependent variable is dichotomous, which means there would be only two possible classes.
+In simple words, the dependent variable is binary in nature having data coded as either 1 (stands for success/yes) or 0 (stands for failure/no).
+Mathematically, a logistic regression model predicts P(Y=1) as a function of X. It is one of the simplest ML algorithms that can be used for various classification problems such as spam detection, Diabetes prediction, cancer detection etc.
+Types-Binary, Multinomial, Ordinal
+
+Steps in Logistic Regression: To implement the Logistic Regression using Python, we will use the same steps as we have done in previous topics of Regression. Below are the steps:
+ 
+Data Pre-processing step
+Fitting Logistic Regression to the Training set Predicting the test result
+Test accuracy of the result(Creation of Confusion matrix) Visualizing the test set result.
+
+
+# SVM (LINEAR KERNEL)
+
+Linear Kernel is used when the data is Linearly separable, that is, it can be separated using a single Line. It's one of the most often utilised kernels. It's typically employed when a data set has a lot of features. Text Classification is an example of a feature with a lot of features, because each alphabet is a new feature. As a result, Linear Kernel is frequently used in Text Classification.
+
+ ![image](https://user-images.githubusercontent.com/71624353/180660118-c13069e6-1855-45de-975f-543c1aec19be.png)
+
+In the above image, there are two set of features “Blue” features and the “Yellow” Features. Since these can be easily separated or in other words, they are linearly separable, so the Linear Kernel can be used here.
+
+Advantages of using Linear Kernel:
+1.	Training a SVM with a Linear Kernel is Faster than with any other Kernel.
+
+2.	When training a SVM with a Linear Kernel, only the optimisation of the C
+
+Regularisation parameter is required. On the other hand, when training with other kernels, there is a need to optimise the γ parameter which means that performing a grid search will usually take more time.
 
